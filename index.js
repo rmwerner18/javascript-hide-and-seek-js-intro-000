@@ -19,7 +19,7 @@ function deepestChild() {
   for (let i = 0; i < list.length; i++) {
     var newList = list[i].innerHTML
     if (newList.querySelectorAll('div').length === 0) {
-      retrun newList.innerHTML
+      retrun newList
     }
   }
 }
