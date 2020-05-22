@@ -18,7 +18,7 @@ function deepestChild() {
   var list = document.getElementById('app').querySelectorAll('div#grand-node div')
   for (let i = 0; i < list.length; i++) {
     list[i].querySelectorAll('div')
-    if (list[i].querySelectorAll('div') === list[list.length - 1].innerHTML) {
+    if (list[i].querySelectorAll('div').innerHTML === list[list.length - 1].innerHTML) {
       return list[i].innerHTML
     }
 }
