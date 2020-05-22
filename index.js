@@ -3,6 +3,7 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget(nested, target) {
+  object = {}
   if (document.querySelector(`#${nested} .${target}`) === true) {
   return document.querySelector(`#${nested} .${target}`)
   }
